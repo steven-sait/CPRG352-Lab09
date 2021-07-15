@@ -2,6 +2,7 @@ package servlets;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -19,8 +20,8 @@ public class UserServlet extends HttpServlet
     private UserService user_service;
     private RoleService role_service;
     
-    private ArrayList<User> user_list = new ArrayList<>();
-    private ArrayList<Role> role_list = new ArrayList<>();
+    private List<User> user_list = new ArrayList();
+    private List<Role> role_list = new ArrayList();
     
     private void printSystemMessage( HttpServletRequest request, HttpServletResponse response, String message ) throws ServletException, IOException
     {

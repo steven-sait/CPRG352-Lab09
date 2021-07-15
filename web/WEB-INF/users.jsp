@@ -34,7 +34,7 @@
                                     <td>${user.getEmail()}</td>
                                     <td>${user.getFirstName()}</td>
                                     <td>${user.getLastName()}</td>
-                                    <td>${role_list.get(user.getRole() - 1).getName()}</td>
+                                    <td>${user.getRole().getRoleName()}</td>
                                     <td><a href="user?action=edit&id=<c:out value='${loop.index}'/>">Edit</a></td>
                                     <td><a href="user?action=delete&id=<c:out value='${loop.index}'/>">Delete</a></td>
                                 </tr>
@@ -57,9 +57,9 @@
                                 <input type="password" id="pwd" name="pwd" value="<c:out value='${action_user.getPassword()}'/>" required><br>
                                 <label for="role">Role: </label>
                                 <select id="role" name="role">
-                                    <option value="1"<c:if test="${action_user.getRole() eq 1}">selected</c:if>>system admin</option>
-                                    <option value="2"<c:if test="${action_user.getRole() eq 2}">selected</c:if>>regular user</option>
-                                    <option value="3"<c:if test="${action_user.getRole() eq 3}">selected</c:if>>company admin</option>
+                                    <option value="1"<c:if test="${action_user.getRole().getRoleId() eq 1}">selected</c:if>>system admin</option>
+                                    <option value="2"<c:if test="${action_user.getRole().getRoleId() eq 2}">selected</c:if>>regular user</option>
+                                    <option value="3"<c:if test="${action_user.getRole().getRoleId() eq 3}">selected</c:if>>company admin</option>
                                 </select><br>
                                 <input type="checkbox" id="active" name="active" value="active"/>
                                 <label for="active">Active </label>

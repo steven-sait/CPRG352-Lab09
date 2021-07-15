@@ -1,12 +1,12 @@
 package services;
 
 import dataaccess.RoleDB;
-import java.util.ArrayList;
+import java.util.List;
 import models.Role;
 
 public class RoleService
 {
-    public ArrayList<Role> getAll() throws Exception
+    public List<Role> getAll() throws Exception
     {
         RoleDB db = new RoleDB();
         return db.getAll();
