@@ -1,0 +1,74 @@
+body
+{
+    font-family: sans-serif;
+    background-color: ghostwhite;
+}
+
+.body-container
+{
+    margin-top: 2%;
+    margin-left: 10%;
+    max-width: 80%;
+    text-align: center;
+}
+
+.user-list
+{
+    margin-left: 10%;
+    max-width: 80%;
+    text-align: center;
+}
+
+.user-selection
+{
+    margin-left: 10%;
+    margin-top: 12px;
+    max-width: 80%;
+    text-align: left;
+}
+
+table
+{
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+}
+
+tr, thead
+{
+    padding: 8px;
+}
+
+thead tr
+{
+    padding: 11px 8px;
+    background-color: coral;
+    border-bottom: 1px solid black;
+}
+
+tr
+{
+    background-color: #c2c2c2;
+}
+
+thead, td
+{
+    border-right: 1px solid black;
+}
+
+p
+{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+h1
+{
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+h2, h3
+{
+    margin-top: 0;
+}
